@@ -15,3 +15,10 @@ This is a simple file upload project. Project used [Spring Framework](https://sp
 ## Future Update
 
 - Ajax file upload
+
+## Launch Display
+
+- Default
+
+- Error
+
