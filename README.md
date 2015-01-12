@@ -19,6 +19,6 @@ This is a simple file upload project. Project used [Spring Framework](https://sp
 ## Launch Display
 
 - Default
-file:///home/pi/Dropbox/spring-project/spring-upload-default.png
+![spring-upload-default](https://cloud.githubusercontent.com/assets/3794501/5698601/2a27981e-9a54-11e4-9627-5a0eeb260856.png)
 - Error
-file:///home/pi/Dropbox/spring-project/spring-upload-error.png
+![spring-upload-error](https://cloud.githubusercontent.com/assets/3794501/5698602/2a27a534-9a54-11e4-9d7c-e2d3096f33ec.png)
