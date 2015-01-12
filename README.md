@@ -1,4 +1,4 @@
-# Spring-upload
+# Spring File Upload
 
 This is a simple file upload project. Project used [Spring Framework](https://spring.io/).
 
