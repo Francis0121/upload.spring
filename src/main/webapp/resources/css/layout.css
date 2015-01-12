@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+body{ background: #232429;}
+.upload_wrap{ width: 300px; margin: 30px auto; padding: 20px; }
+.upload_wrap>header{ padding-bottom: 15px; width: 100%; color: #fff; }
+.upload_wrap>header>a:hover, .upload_wrap>header>a:visited{ text-decoration: none; color: #fff;}
+.upload_wrap>header h1{ font-size: 100%; }
+.upload_wrap>article{ padding-bottom: 15px; width: 100%; }
+.upload_wrap>footer{ font-size: 72.5%; width: 100%; color: #fff;}
+
+.label{ font-size: 82.75%; width: 290px; float: left; margin: 5px 10px;}
+.label_default{ color: #a3b9ff; }
+.label_error{ color: #ffa3a3; }
+
+.input{ width: 200px; font-size: 75%; padding : 5px; color: #000; float: left; margin: 5px 10px;}
+.input_default{ border: 1px solid #e6ecff; background: #e6ecff; }
+.input_error{ border: 1px solid #ffebea; background: #ffebea; }
+
+.error{ color: #f63f36; font-size: 82.75%; float: left; width: 290px; margin: 5px 10px; }
+
+.btn{ color: #fff; background: #019b99; padding: 5px 15px; margin: 5px 10px; cursor: pointer; font-size: 82.75%; border-radius: 3px; }
