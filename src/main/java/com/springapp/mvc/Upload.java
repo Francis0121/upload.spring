@@ -9,8 +9,6 @@ public class Upload {
 
     private CommonsMultipartFile file;
 
-    private String path;
-
     public CommonsMultipartFile getFile() {
         return file;
     }
@@ -19,19 +17,10 @@ public class Upload {
         this.file = file;
     }
 
-    public String getPath() {
-        return path;
-    }
-
-    public void setPath(String path) {
-        this.path = path;
-    }
-
     @Override
     public String toString() {
         return "Upload{" +
                 "file=" + file +
-                ", path='" + path + '\'' +
                 '}';
     }
 }

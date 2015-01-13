@@ -48,23 +48,23 @@ public class UploadController {
 		}
 
 		CommonsMultipartFile file = upload.getFile();
-		upload.setPath(uploadService.transferFile(file, file.getOriginalFilename()));
-		logger.debug("upload post" + upload);
+		uploadService.transferFile(file, file.getOriginalFilename());
+		logger.debug("Upload success : " + upload);
 
 		return "redirect:/";
 	}
 	
-	@RequestMapping(value = "/json", method = RequestMethod.POST)
+	@Deprecated
+	@RequestMapping(value = "json", method = RequestMethod.POST)
 	@ResponseBody
-	public void uploadJson(@RequestBody Upload upload){
-
+	public Boolean uploadJson(@RequestBody Upload upload){
+		
+		CommonsMultipartFile file = upload.getFile();
+		uploadService.transferFile(file, file.getOriginalFilename());
+		logger.debug("Upload success : " + upload);
+	
+		return true;
 	}
 	
-	@RequestMapping(value = "/test", method = RequestMethod.POST)
-	@ResponseBody
-	public String postTest(@RequestParam(value = "name") String name){
-		logger.info("postTest"+name);
-		return "success";
-	}
 
 }
