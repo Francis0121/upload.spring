@@ -15,7 +15,7 @@
 	<link rel="stylesheet" type="text/css" href="${cp }/resources/css/default.css">
 	<link rel="stylesheet" type="text/css" href="${cp }/resources/css/layout.css">
 
-	<script src="${cp}/resources/javascript/jquery-1.11.2.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 	<script src="${cp}/resources/javascript/jquery.json.js"></script>
 
 	<script>
@@ -33,8 +33,7 @@
 		</header>
 
 		<article>
-			<form:form commandName="upload" action="${cp}/" method="post" enctype="multipart/form-data">
-
+			<form:form commandName="upload" action="${cp}/http" method="post" enctype="multipart/form-data">
 				<form:label path="file" cssClass="label label_default" cssErrorClass="label label_error">File Upload</form:label>
 				<form:input path="file" type="file" cssClass="input input_default" cssErrorClass="input input_error"/>
 				<form:errors path="file" cssClass="error"/>

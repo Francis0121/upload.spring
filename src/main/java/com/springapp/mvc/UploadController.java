@@ -8,9 +8,7 @@ import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
 import org.springframework.validation.Errors;
 import org.springframework.validation.Validator;
-import org.springframework.web.bind.annotation.ModelAttribute;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.commons.CommonsMultipartFile;
 
 @Controller
@@ -24,12 +22,11 @@ public class UploadController {
 
 	@RequestMapping(method = RequestMethod.GET)
 	public String index(@ModelAttribute Upload upload) {
-
 		return "index";
 	}
 
-	@RequestMapping(method = RequestMethod.POST)
-	public String upload(@ModelAttribute Upload upload, BindingResult result){
+	@RequestMapping(value = "http", method = RequestMethod.POST)
+	public String uploadHttp(@ModelAttribute Upload upload, BindingResult result){
 		new Validator(){
 			@Override
 			public boolean supports(Class<?> clazz) {
@@ -55,6 +52,12 @@ public class UploadController {
 		logger.debug("upload post" + upload);
 
 		return "redirect:/";
+	}
+	
+	@RequestMapping(value = "/json", method = RequestMethod.POST)
+	@ResponseBody
+	public void uploadJson(@RequestBody Upload upload){
+
 	}
 
 }
