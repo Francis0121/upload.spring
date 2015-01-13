@@ -59,5 +59,12 @@ public class UploadController {
 	public void uploadJson(@RequestBody Upload upload){
 
 	}
+	
+	@RequestMapping(value = "/test", method = RequestMethod.POST)
+	@ResponseBody
+	public String postTest(@RequestParam(value = "name") String name){
+		logger.info("postTest"+name);
+		return "success";
+	}
 
 }

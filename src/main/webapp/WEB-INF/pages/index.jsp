@@ -16,7 +16,6 @@
 	<link rel="stylesheet" type="text/css" href="${cp }/resources/css/layout.css">
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-	<script src="${cp}/resources/javascript/jquery.json.js"></script>
 
 	<script>
 		var contextPath = '<c:out value="${cp}"/>';
